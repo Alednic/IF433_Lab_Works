@@ -1,9 +1,10 @@
 package oop_00000105419_Cindela.week01
 
 fun main(){
-    var name: String = "John Thor"
-    var score: Int = 80
+    // REFACTOR: menggunakan val dan hapus tipe data eksplisit
+    val name = "John Thor"
+    val score = 80
 
-    //concatenation gaya yang lama
-    println("Nama: " + name + ", Nilai: " + score)
+    //REFACTOR: String Template($name)
+    println("Nama: $name, Nilai: $score")
 }
