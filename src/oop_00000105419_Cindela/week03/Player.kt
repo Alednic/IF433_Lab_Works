@@ -4,20 +4,30 @@ class Player (
     val username: String
 ){
     private var xp: Int = 0
-    var level: Int
+
+    val level: Int
         get() = (xp/100) + 1
 
     fun addXp(amount: Int) {
         if (amount > 0) {
             val oldLevel = level
             xp += amount
-            println("$username mendapatkan $amount XP.")
+            println("$username dapat $amount XP.")
 
             if (level > oldLevel) {
-                println("Level Up! Selamat $username naik ke level $level.")
+                println("Level Up! $username naik level $level.")
             }
         } else {
             println("ERROR: XP yang didapat harus positif!")
         }
     }
+}
+
+fun main(){
+        val player1 = Player("Jay")
+
+        //player1.xp = 500 //error
+
+        player1.addXp(50)
+        player1.addXp(60)
 }
