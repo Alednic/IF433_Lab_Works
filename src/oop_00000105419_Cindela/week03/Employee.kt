@@ -9,7 +9,6 @@ class Employee(val name: String) {
                 field = value
             }
         }
-
     private var performanceRating: Int = 3
     val tax: Double
         get() =  salary * 0.1
