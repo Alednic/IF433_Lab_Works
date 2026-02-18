@@ -20,3 +20,13 @@ class Weapon(
             else -> "Common"
         }
 }
+
+fun main(){
+    val sword = Weapon("Holy Sword")
+    sword.damage = -50 // gagal
+    sword.damage = 9999 // jadi 1000
+
+    println("Senjata: ${sword.name}")
+    println("Damage : ${sword.damage}")
+    println("Tier   : ${sword.tier}")
+}
