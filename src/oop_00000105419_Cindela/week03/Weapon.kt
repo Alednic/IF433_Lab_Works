@@ -1,3 +1,5 @@
+package oop_00000105419_Cindela.week03
+
 class Weapon(
     val name: String,
 ){
