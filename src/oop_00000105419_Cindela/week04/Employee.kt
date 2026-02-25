@@ -6,6 +6,4 @@ open class Employee(name: String, baseSalary: Int) {
     }
 
     open fun calculateBonus(): Int = (baseSalary * 0.1).toInt()
-
-    }
 }
