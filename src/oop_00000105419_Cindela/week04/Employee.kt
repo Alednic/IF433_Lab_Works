@@ -1,6 +1,6 @@
 package oop_00000105419_Cindela.week04
 
-open class Employee(name: String, baseSalary: Int) {
+open class Employee(val name: String, val baseSalary: Int) {
     open fun work(){
         println("$name sedang bekerja.")
     }
