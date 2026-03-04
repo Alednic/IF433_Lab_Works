@@ -6,7 +6,7 @@ class EWallet (accountName: String, var balance: Double): PaymentMethod(accountN
                 balance -= amount
                 println("Pembayaran E-Wallet berhasil. Sisa saldo: $balance")
             } else {
-                println("Saldo tidak cukup")
+                println("Saldo EWallet tidak cukup")
             }
         }
 
