@@ -1,6 +1,6 @@
 package oop_00000105419_Cindela.week06
 
-class SmartHomeHub
+class SmartHomeHub{
     val devices = mutableListOf<SmartDevice>()
 
     fun addDevice(device: SmartDevice) {
@@ -22,6 +22,6 @@ class SmartHomeHub
             if (device is SmartSpeaker) {
                 device.playMusic("Sirine Peringatan")
             }
+        }
     }
-}
 }
