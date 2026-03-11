@@ -1,0 +1,5 @@
+package oop_00000105419_Cindela.week06
+
+class Smartphone : Camera, Phone {
+
+}
