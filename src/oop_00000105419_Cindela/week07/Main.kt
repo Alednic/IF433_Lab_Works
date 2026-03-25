@@ -40,7 +40,16 @@ fun main() {
     println("\nSIMULASI GAME RPG")
     GameManager.startGame()
     GameManager.startGame()
+
     println("Drop Chance Legendary: ${ItemRarity.LEGENDARY.dropChance}%")
     val myWeapon = Weapon.forgeStarterSword()
     println("Senjata didapatkan: ${myWeapon.item.name} (Durability: ${myWeapon.durability})")
+
+    val upgradedSword = myWeapon.item.copy(damage = 25)
+    println("Senjata setelah upgrade: $upgradedSword")
+
+    processEvent(SafeZone)
+    processEvent(MonsterEncounter("Goblin Nakal"))
+    processEvent(LootDropped(upgradedSword))
+    processEvent(GameOver("Terkena jebakan racun"))
 }
