@@ -26,4 +26,13 @@ fun main() {
 
     val (userName, userAge) = data1
     println("Destructured: $userName berumur $userAge")
+
+    println("\nTEST SEALED CLASS")
+    val response: ApiResponse = Success("Data berhasil ditarik!")
+
+    // ERROR: 'when' expression must be exhaustive
+    val uiMessage = when (response) {
+        is Success -> "Tampilkan: ${response.data}"
+        is Error -> "Munculkan alert: ${response.message}"
+    }
 }
