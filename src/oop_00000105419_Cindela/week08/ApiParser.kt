@@ -1,4 +1,4 @@
-package oop_<NIM>_Cindela.week08
+package oop_00000105419_Cindela.week08
 
 class ApiParser {
     fun parseProduct(rawJson: Map<String, Any?>): Product? {
