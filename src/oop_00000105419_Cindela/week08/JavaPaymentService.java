@@ -1,4 +1,4 @@
-package oop_00000105419_Cindela.week08
+package oop_00000105419_Cindela.week08;
 
 public class JavaPaymentService {
     public static String processPayment(String productId) {
