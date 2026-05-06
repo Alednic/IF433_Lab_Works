@@ -32,4 +32,9 @@ fun main() {
         println("\nHasil Pencarian Kamera:")
         println(it.diagnose())
     }
+
+    println("\n=== Rangkuman Dashboard ===")
+    with(homeDevices) {
+        println("Total perangkat terdaftar: ${this.size}")
+    }
 }
