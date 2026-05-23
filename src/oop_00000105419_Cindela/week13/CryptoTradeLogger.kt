@@ -55,5 +55,8 @@ fun main() {
     )
 
     saveTrades(myTrades, "crypto_trades.csv")
-    println("Data awal berhasil di-save.")
+    println("Data awal berhasil di save.")
+
+    File("crypto_trades.csv").appendText("CORRUPT_ID,DOGEUSDT,Hold,XX,YY\n")
+    println("Data korup (DOGE) berhasil di inject untuk pengujian.")
 }
